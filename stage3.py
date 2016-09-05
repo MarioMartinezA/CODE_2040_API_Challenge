@@ -8,4 +8,11 @@ json_data = {"token": api_token}
 
 request = requests.post(url_haystack, json_data)
 
-print request.text
+#Calling the json decoder.
+json = request.json()
+
+
+print "Needle: " + json['needle']
+
+for element in json['haystack']:
+    print element
