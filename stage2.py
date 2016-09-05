@@ -17,4 +17,4 @@ print request.text
 reverse_string = request.text
 reverse_string = reverse_string[::-1]
 
-print send_data.text
+print reverse_string
