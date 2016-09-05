@@ -13,3 +13,8 @@ request = requests.post(url_reverse, json_data)
 
 print request.text
 
+#Reversing the string
+reverse_string = request.text
+reverse_string = reverse_string[::-1]
+
+print send_data.text
